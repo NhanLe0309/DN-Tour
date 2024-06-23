@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đà Nẵng Trang Chủ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto:wght@500;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_Home.css">
+    <script src="https://kit.fontawesome.com/a68c539f76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Phần đầu trang gồm logo và các đường dẫn đến các trang-->
+    <header>
+        <nav>
+            <ul class="navbar-fruit">
+                <div class="col-lg-2 col-md-12 col-12"><img src="img/Shared/logo.png"></div>
+                <li class="col-lg-2 col-md-4 col-4"><a href="index_Home.html">Trang chủ</a></li>
+                <li class="col-lg-2 col-md-4 col-4"><a href="index_Hotel.html">Khách sạn</a></li>
+                <li class="col-lg-2 col-md-4 col-4">
+                  <a href="index_Detail_Location.html">Địa điểm</a>
+                  <ul class="submenu col-lg-2">
+                    <li><a href="index_Detail_Location.html#beach">Bãi Biển</a></li>
+                    <li><a href="index_Detail_Location.html#park">Công viên</a></li>
+                    <li><a href="index_Detail_Location.html#cuisine">Ẩm thực</a></li>
+                    <li style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;"><a href="index_Detail_Location.html#shopping">Mua sắm</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+    </header>
+
+    <!--Phần banner và phần giới thiệu ngắn về điểm đến phổ biến-->
+    <div id="banner-fruit">
+        <div class="text col-lg-7 col-md-12 col-12">
+            <div class="title">
+                <p class="yellow">ưu đãi đặc biệt</p>
+                <p class="popular">Điểm đến <b>Phổ biến</b></p>
+            </div>
+            <div class="title-content">
+                <p>Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà </p>
+            </div>
+        </div>
+        <div class="img col-lg-5 col-md-12 col-12">
+            <img src="img/HomePage/people.jpg">
+        </div>
+    </div>
+
+    <!--Phần thân hiển thị các địa điểm nó sẽ mặc định xuất hiện khi khởi tạo trang-->
+    <section id="section1" class="detail active">
+        <div class="row gx-1">
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/Ban-dao-Son-Tra.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Bán đảo Sơn Trà</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details">Bán đảo Sơn Trà là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section2')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/ba-na-hills.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Bà nà Hill</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details">Bán đảo Sơn Trà là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section3')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/bien-my-khe.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Biền Mỹ Kh</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details"> là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section4')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/cau-rong.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Cầu Rồng</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details"> là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section5')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/cu-lao-cham.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Cù Lao Chàm</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details"> là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section6')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/Hoi-An.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Hội An</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details"> là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section7')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/hue.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Huế</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details"> là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section8')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/nui-ngu-hanh-son.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Núi Ngũ Hành Sơn</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details"> là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section9')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="img" class="col-lg-4 col-md-6">
+            <div class="img">
+                <img src="img/HomePage/nui-than-tai.jpg">
+            </div>
+            <div id="text">
+                <div class="right">
+                    <p class="yellow">Nhiệt độ địa phương</p>
+                    <p class="temperature">23°C/29°C</p>
+                </div>
+                <div class="left">
+                    <p class="yellow danang">Đà Nẵng</p>
+                    <p class="direction">Núi Thần Tài</p>
+                </div>
+            </div>
+            <div class="hover">
+                <div class="top">
+                    <p class="yellow">Giá một đêm</p>
+                    <P class="cost">500.000VNĐ</P>
+                    <p class ="details">Bán đảo Sơn Trà là một trong những địa điểm nổi tiếng ở Đà Nẵng</p>
+                </div>
+                <div class="bottom">
+                    <a href="#" onclick="showSection('section10')">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Bán đảo Sơn Trà khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section2">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Bán đảo Sơn Trà</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Bán đảo Sơn Trà là một trong những địa điểm du lịch Đà Nẵng mà bất kì ai cũng nên ghé thăm một lần. Nơi đây không chỉ có hệ sinh thái động thực vật đa dạng; những bãi biển đẹp; hải sản tươi ngon mà còn vô vàn trải nghiệm thú vị đang chờ bạn khám phá.</p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/Ban-dao-Son-Tra.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/Ban-dao-Son-Tra.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/Ban-dao-Son-Tra.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Bán đảo Sơn Trà nằm ở phía Bắc của thành phố Đà Nẵng, cách trung tâm thành phố khoảng 10 km. Điều này tạo nên một sự kết hợp độc đáo giữa thiên nhiên hoang dã và gần gũi với cuộc sống đô thị</p>
+                        </li>
+                        <li><p class="bold">Thiên nhiên và cảnh quan:</p>
+                            <p>Bán đảo Sơn Trà là một khu vực thiên nhiên vô cùng đẹp và bảo tồn. Nơi này nổi tiếng với cảnh quan hoang dã, biển xanh, và rừng núi dày đặc. Điểm cao nhất của bán đảo là ngọn núi Bàn Cờ, nơi bạn có thể tận hưởng tầm nhìn toàn cảnh vùng Đà Nẵng và biển Đông.</p>
+                        </li>
+                        <li><p class="bold">Lịch sử và tín ngưỡng:</p>
+                            <p>Bán đảo Sơn Trà có lịch sử lâu đời và từng là căn cứ quân sự trong thời kỳ chiến tranh Việt Nam. Nó còn là nơi thờ cúng Linh Ứng, với một tượng Phật Bà Quan  m cao 67m, là biểu tượng nổi bật của bán đảo và một trung tâm tôn giáo quan trọng.</p>
+                        </li>
+        
+                        <li><p class="bold">Điểm đến du lịch:</p>
+                            <p>Bán đảo Sơn Trà có nhiều điểm đến hấp dẫn cho du khách:</p>
+                            <ul>
+                                <li>Ngọn núi Bàn Cờ (Ban Co Peak): Đây là điểm cao nhất của bán đảo, nơi bạn có thể tận hưởng tầm nhìn toàn cảnh Đà Nẵng và biển Đông.</li>
+                                <li>Biển Sơn Trà: Bãi biển hoang sơ với cát trắng và nước biển trong xanh, là nơi tuyệt vời để tắm biển và thư giãn.</li>
+                                <li>Ngôi chùa Linh Ứng: Chùa nằm ở đỉnh núi Linh Ứng, với tượng Phật Bà Quan  m cao 67m, thu hút nhiều du khách và tín đồ.</li>
+                                <li>Vườn thú Sơn Trà: Đây là một khu vườn thú nhỏ nhưng đa dạng, với nhiều loài động vật hoang dã và hiếm.</li>
+                                <li>Suối mọc Ngự Bình: Một dòng suối trong khu vực rừng núi hoang dã, tạo ra một môi trường tự nhiên yên bình.</li>
+                            </ul>        
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Phần hiển thị chi tiết Bà nà Hill khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section3">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Bà nà Hill</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Bán đảo Sơn Trà là một trong những địa điểm du lịch Đà Nẵng mà bất kì ai cũng nên ghé thăm một lần. Nơi đây không chỉ có hệ sinh thái động thực vật đa dạng; những bãi biển đẹp; hải sản tươi ngon mà còn vô vàn trải nghiệm thú vị đang chờ bạn khám phá.</p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/ba-na-hills.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/ba-na-hills.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/ba-na-hills.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Bà Nà Hills nằm cách trung tâm thành phố Đà Nẵng khoảng 25 km về phía Tây, trên dãy núi Trường Sơn. Điểm cao nhất của khu vực này là đỉnh Bà Nà, nằm ở độ cao khoảng 1.487m. </p>
+                        </li>
+                        <li><p class="bold">Cảnh quan:</p>
+                            <p>Bà Nà Hills nổi tiếng với cảnh quan thiên nhiên ngoạn mục và thời tiết mát mẻ quanh năm. Khu vực này được thiết kế với kiến trúc kiểu Pháp và trải dài trên dãy núi xanh mướt. Điều này tạo ra một không gian độc đáo và thu hút nhiều du khách. . </p>
+                        </li>
+                        <li><p class="bold">Hoạt động:</p>
+                            <ul>
+                                <li>Cáp treo Bà Nà: Cáp treo Bà Nà là một trong những cáp treo dài nhất và cao nhất thế giới, với độ dài khoảng 5.801m. Trải qua cáp treo, bạn có cơ hội tận hưởng tầm nhìn toàn cảnh vùng Đà Nẵng và biển Đông.</li>
+                                <li>Bà Nà Fantasy Park: Đây là công viên giải trí trong nhà lớn với nhiều trò chơi thú vị, vòng quay, bảo tàng sáng tạo, và nhiều hoạt động giải trí khác.</li>
+                                <li>Làng Pháp: Bà Nà Hills có một làng Pháp với kiến trúc kiểu Pháp, quán cà phê, nhà hàng và cửa hàng, tạo ra một không gian lý tưởng để thư giãn và thưởng thức ẩm thực.</li>
+                                <li>Ngôi chùa Linh Ứng: Tại đỉnh Bà Nà, có một ngôi chùa Linh Ứng với tượng Phật Bà Quan Âm cao 27m, thường được coi là tượng Phật Bà lớn thứ tư trên thế giới.</li>
+                                <li>Hoạt động ngoài trời: Bà Nà Hills cung cấp nhiều hoạt động ngoài trời như leo núi, tham quan rừng, và thư giãn tại các quán cà phê ngoài trời với cảnh quan tuyệt đẹp.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Biển Mỹ Khê khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section4">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Bãi biển Mỹ Khê</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Bãi biển Mỹ Khê là một trong những bãi biển nổi tiếng và đẹp nhất ở Đà Nẵng, Việt Nam, và thậm chí được coi là một trong những bãi biển đẹp nhất trên thế giới. Dưới đây là một giới thiệu về Bãi biển Mỹ Khê:</p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/bien-my-khe.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/bien-my-khe.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/bien-my-khe.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Bãi biển Mỹ Khê nằm ở phía Đông thành phố Đà Nẵng, trải dài từ cuối cầu Rồng đến chân ngọn núi Sơn Trà, với một chiều dài khoảng 900m. Đây là một vị trí thuận lợi, cách trung tâm thành phố Đà Nẵng khoảng 6 km và thuộc khu vực sông Hàn mới, rất gần với các khu vực du lịch quan trọng như Bán đảo Sơn Trà và các cửa khẩu biển. </p>
+                        </li>
+                        <li><p class="bold">Cảnh quan:</p>
+                            <p>Bãi biển Mỹ Khê nổi tiếng với cát trắng mịn và biển xanh trong, tạo nên một bãi biển tuyệt đẹp. Cảnh quan ở đây rất hấp dẫn với dãy dừa, những chiếc áo cờ nhiều màu, và các ghế dựa được thiết kế để người ta có thể tận hưởng cảnh biển và không gian biển đẹp. </p>
+                        </li>
+                        <li><p class="bold">Hoạt động:</p>
+                            <p>Bãi biển Mỹ Khê cung cấp nhiều hoạt động và tiện ích cho du khách, bao gồm:</p>
+                            <ul>
+                                <li>Tắm biển: Bãi biển Mỹ Khê có dòng biển êm đềm, nước biển trong xanh, là nơi lý tưởng để tắm biển và thư giãn.</li>
+                                <li>Lướt sóng: Bãi biển có điều kiện tốt cho lướt sóng và các môn thể thao nautic khác.</li>
+                                <li>Nhảy dù và dù lượn: Có dịch vụ nhảy dù và dù lượn cho những người muốn trải nghiệm cảm giác hùng vĩ của nhảy từ độ cao.</li>
+                                <li>Nhà hàng và quán cà phê: Khu vực biển có nhiều nhà hàng và quán cà phê nơi bạn có thể thưởng thức các món ăn ngon và nước uống mát lạnh.</li>
+                                <li>Lễ hội biển: Thường xuyên có các sự kiện và lễ hội diễn ra tại bãi biển Mỹ Khê, bao gồm triển lãm nghệ thuật, lễ hội pháo hoa và nhiều hoạt động vui chơi giải trí khác.</li>
+                            </ul>        
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Cầu Rồng khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section5">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Cầu Rồng Đà Nẵng</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Cầu Rồng không chỉ là một công trình kỹ thuật ấn tượng mà còn là một biểu tượng đặc biệt của Đà Nẵng, thể hiện sự kết hợp giữa hiện đại và truyền thống. Du khách đến Đà Nẵng thường không thể không ghé qua cầu Rồng để chiêm ngưỡng nó vào ban đêm và tham gia vào các sự kiện tại đây. </p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/cau-rong.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/cau-rong.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/cau-rong.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Cầu Rồng nằm trên sông Hàn (Han River) và nối liền khu vực trung tâm thành phố Đà Nẵng với khu vực sông Hàn mới (Son Tra Peninsula), nơi bạn có thể tìm thấy Bán đảo Sơn Trà và bãi biển Mỹ Khê</p>
+                        </li>
+                        <li><p class="bold">Thiết kế độc đáo:</p>
+                            <p>Cầu Rồng được thiết kế và xây dựng với hình dáng một con rồng, với độ dài khoảng 666 mét và 6 làn xe. Cái tên "Cầu Rồng" xuất phát từ hình dáng của con rồng trải dài trên dòng sông Hàn. Là một trong những cây cầu xoay lớn nhất ở Việt Nam, cầu Rồng có khả năng quay 180 độ, cho phép các tàu và tàu du lịch lớn đi qua dưới cầu mà không gây chướng ngại cho giao thông trên cầu.</p>
+                        </li>
+                        <li><p class="bold">Ánh sáng đa dạng:</p>
+                            <p>Cầu Rồng được trang bị hệ thống đèn LED đa dạng màu sắc, tạo ra một sự kiện ánh sáng thú vị vào mỗi tối. Các chương trình ánh sáng được biểu diễn hàng đêm, làm cho cầu trở thành một điểm đến quen thuộc cho du khách và người dân Đà Nẵng. Một số chương trình ánh sáng phổ biến bao gồm hiệu ứng rồng thở lửa và hiển thị các biểu tượng nổi tiếng của Việt Nam.</p>
+                        </li>
+                        <li><p class="bold">Sự kiện thường xuyên:</p>
+                            <p>Cầu Rồng thường tổ chức các sự kiện và triển lãm công cộng, và nó trở thành một biểu tượng của sự phát triển và hiện đại của Đà Nẵng. Các sự kiện như lễ hội pháo hoa quốc tế Đà Nẵng Fireworks Festival thường diễn ra tại khu vực cầu Rồng, thu hút nhiều du khách đến tham quan.</p>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Cù lao Chàm khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section6">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Cù lao Chàm</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Đảo này là một điểm đến du lịch phổ biến và nổi tiếng với cảnh quan thiên nhiên đẹp, biển xanh ngắt và đa dạng về hệ sinh thái biển. Dưới đây là một giới thiệu về Cù Lao Chàm: </p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/cu-lao-cham.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/cu-lao-cham.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/cu-lao-cham.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Cù Lao Chàm thuộc huyện Hội An, tỉnh Quảng Nam, và nằm trong Biển Đông, khoảng 15 km về phía Đông của thành phố Hội An và 30 km về phía Bắc của thành phố Đà Nẵng. Đảo này là một quần đảo gồm nhiều đảo nhỏ hơn, trong đó đảo chính được gọi là đảo Hòn Lao. </p>
+                        </li>
+                        <li><p class="bold">Cảnh quan:</p>
+                            <p>Cù Lao Chàm có một cảnh quan thiên nhiên tuyệt đẹp, với bãi biển cát trắng, nước biển trong xanh, và dãy núi nhỏ xanh tươi. Đảo này thuộc vào Công viên Biển Cù Lao Chàm - Hội An và là một di sản thiên nhiên thế giới được UNESCO công nhận. </p>
+                        </li>
+                        <li><p class="bold">Động vật biển và hệ sinh thái:</p>
+                            <p>Cù Lao Chàm có một hệ sinh thái biển đa dạng với nhiều loài san hô, cá, rùa biển và động vật biển khác. Đảo này là nơi lí tưởng cho hoạt động lặn biển và thám hiểm dưới nước để khám phá cảnh biển đẹp và các san hô rạn.</p>
+                        </li>
+                        <li><p class="bold">Hoạt động du lịch:</p>
+                            <p>Cù Lao Chàm là một điểm đến phù hợp cho du khách yêu thiên nhiên và biển cả. Các hoạt động du lịch phổ biến bao gồm:</p>
+                            <ul>
+                                <li>Lặn biển: Cùng với động vật biển và san hô đầy màu sắc.</li>
+                                <li>Thăm các ngôi chùa: Đảo có một số ngôi chùa và đền thờ tôn giáo và văn hóa đáng chú ý.</li>
+                                <li>Tham quan lighthouse: Cây cầu Chàm là một ngọn hải đăng lịch sử và tạo cơ hội tận hưởng tầm nhìn đẹp.</li>
+                                <li>Thư giãn tại biển: Bãi biển Cù Lao Chàm là nơi tuyệt vời để tắm biển và thư giãn.</li>
+                            </ul>
+        
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Hội An khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section7">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Hội An</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Phố cổ Hội An từng là một thương cảng quốc tế sầm uất, gồm những di sản kiến trúc đã có từ hàng trăm năm trước, được UNESCO công nhận là di sản văn hóa thế giới từ năm 1999.</p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/Hoi-An.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/Hoi-An.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/Hoi-An.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Thành phố Hội An nằm bên bờ bắc hạ lưu sông Thu Bồn. Hội An là một đô thị cổ của Việt Nam, cách trung tâm thủ đô Hà Nội khoảng 795 km về phía Nam, cách trung tâm Thành phố Hồ Chí Minh khoảng 940 km, cách thành phố Huế khoảng 122 km, cách trung tâm thành phố Đà Nẵng khoảng 30 km về phía đông nam</p>
+                        </li>
+                        <li><p class="bold">Cảnh quan:</p>
+                            <p>Cù Lao Chàm có một cảnh quan thiên nhiên tuyệt đẹp, với bãi biển cát trắng, nước biển trong xanh, và dãy núi nhỏ xanh tươi. Đảo này thuộc vào Công viên Biển Cù Lao Chàm - Hội An và là một di sản thiên nhiên thế giới được UNESCO công nhận. </p>
+                        </li>
+                        <li><p class="bold">Động vật biển và hệ sinh thái:</p>
+                            <p>Cù Lao Chàm có một hệ sinh thái biển đa dạng với nhiều loài san hô, cá, rùa biển và động vật biển khác. Đảo này là nơi lí tưởng cho hoạt động lặn biển và thám hiểm dưới nước để khám phá cảnh biển đẹp và các san hô rạn.</p>
+                        </li>
+                        <li><p class="bold">Hoạt động du lịch:</p>
+                            <p>Cù Lao Chàm là một điểm đến phù hợp cho du khách yêu thiên nhiên và biển cả. Các hoạt động du lịch phổ biến bao gồm:</p>
+                            <ul>
+                                <li>Lặn biển: Cùng với động vật biển và san hô đầy màu sắc.</li>
+                                <li>Thăm các ngôi chùa: Đảo có một số ngôi chùa và đền thờ tôn giáo và văn hóa đáng chú ý.</li>
+                                <li>Tham quan lighthouse: Cây cầu Chàm là một ngọn hải đăng lịch sử và tạo cơ hội tận hưởng tầm nhìn đẹp.</li>
+                                <li>Thư giãn tại biển: Bãi biển Cù Lao Chàm là nơi tuyệt vời để tắm biển và thư giãn.</li>
+                            </ul>
+        
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Huế khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section8">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Huế</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Huế là một thành phố lịch sử và văn hóa nằm ở miền Trung Việt Nam, và nó là một trong những điểm đến du lịch quan trọng của quốc gia. Dưới đây là một giới thiệu về Huế: </p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/hue.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/hue.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/hue.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Huế nằm ở miền Trung Việt Nam, cách thành phố Đà Nẵng khoảng 100 km về phía Bắc. Thành phố Huế nằm bên bờ sông Hương, cách biển Đông khoảng 10 km về phía Đông. Đây là một vị trí địa lý quan trọng trên tuyến đường từ Bắc vào Nam Việt Nam và đã từng là kinh đô của triều Nguyễn trong lịch sử. </p>
+                        </li>
+                        <li><p class="bold">Kiến trúc độc đáo:</p>
+                            <ul>
+                                <li>Hoàng thành Huế, được xây dựng vào thế kỷ 19, là một bức tranh kiến trúc đáng kinh ngạc với các cung điện, cổng cầu và những tường thành gắn liền với lịch sử triều Nguyễn.</li>
+                                <li>Các lăng mộ hoàng gia như Lăng Tự Đức, Lăng Minh Mạng và Lăng Khải Định là những điểm dừng chân quan trọng để tìm hiểu về văn hóa và lịch sử Huế.</li>
+                                <li>Các đền chùa và ngôi chùa kiến trúc độc đáo như Chùa Thiên Mụ và Chùa Tứ Phước là các địa điểm tôn giáo quan trọng và tham quan.</li>
+                            </ul>        
+                        </li>
+                        <li><p class="bold">Thiên nhiên và Cảnh quan:</p>
+                            <ul>
+                                <li>Thành phố nằm bên sông Hương, tạo cơ hội thư giãn và tham quan cảnh quan sông nước.</li>
+                                <li>Núi Ngự Bình và Vườn Quốc gia Bạch Mã nằm gần Huế, và đây là nơi du khách có thể tận hưởng thiên nhiên và leo núi.</li>
+                            </ul>
+                        </li>
+                        <li><p class="bold">Ăn uống:</p>
+                            <p>Huế nổi tiếng với ẩm thực độc đáo và ngon miệng, trong đó có các món như Bún Bò Huế (bún bò), Bánh bèo, Bánh khoái và Hến xào. </p>
+                        </li>
+                        <li><p class="bold">Hoạt động giải trí:</p>
+                            <p>Thành phố Huế thường tổ chức các sự kiện và lễ hội truyền thống, trong đó có Lễ hội Huế (Huế Festival) vào mùa xuân hằng năm. Sự kiện này kết hợp giữa nghệ thuật biểu diễn, triển lãm, âm nhạc và ẩm thực.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Núi Ngũ Hành Sơn khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section9">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Núi Ngũ Hành Sơn</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Ngũ Hành Sơn nằm ở khu vực có vị trí địa lý hết sức thuận lợi, cách trung tâm thành phố Đà Nẵng 8km. Đây là điểm đến được du khách yêu mến trên hành trình tham quan các vùng đất thuộc con đường di sản Miền Trung như: Cố Đô Huế Ngũ Hành Sơn Phố cổ Hội An - Khu di tích đền tháp Mỹ Sơn</p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/nui-ngu-hanh-son.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/nui-ngu-hanh-son.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/nui-ngu-hanh-son.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Ngũ Hành Sơn là một khu vực nổi tiếng ở Đà Nẵng, Việt Nam, nằm cách trung tâm thành phố khoảng 8 km về phía Nam. Đây là một điểm đến du lịch phổ biến với cảnh quan thiên nhiên tuyệt đẹp và giá trị văn hóa lịch sử. </p>
+                        </li>
+                        <li><p class="bold">Thiên nhiên và cảnh quan:</p>
+                            <p>Ngũ Hành Sơn (tạm dịch là "Năm ngọn núi") là một khu vực đá vôi nổi tiếng với năm ngọn núi đá vôi kỳ diệu. Các ngọn núi này có tên gọi theo năm yếu tố ngũ hành trong đạo Đông Á: Thủy, Hỏa, Mộc, Kim, và Thổ. Mỗi ngọn núi có hình dáng và kiểu dáng riêng biệt, tạo nên một cảnh quan độc đáo. Các ngọn núi này là:</p>
+                            <ul>
+                                <li>Ngọn núi Thủy (Water Mountain): Thường được gọi là Hòa Sơn, nổi tiếng với những hòa quyện thiên nhiên và nước biển.</li>
+                                <li>Ngọn núi Hỏa (Fire Mountain): Còn gọi là Hoàng Sơn, có các hang động và đá vôi đỏ cháy đẹp mắt.</li>
+                                <li>Ngọn núi Mộc (Wood Mountain): Gọi là Kim Sơn, có rừng nguyên sinh và thảm hoa bát ngát.</li>
+                                <li>Ngọn núi Kim (Metal Mountain): Được gọi là Thổ Sơn, có nhiều hang động, chùa chiền, và động vật hoang dã.</li>
+                                <li>Ngọn núi Thổ (Earth Mountain): Còn gọi là Ngọc Sơn, nổi tiếng với những dáng đá hùng vĩ và hình ảnh tôn giáo.</li>
+                            </ul>             
+                        </li>
+                        <li><p class="bold">Lịch sử và tín ngưỡng:</p>
+                            <p>Ngũ Hành Sơn có lịch sử lâu đời và là nơi thờ cúng của nhiều tín đồ Phật giáo. Nhiều chùa chiền và đền thờ nằm trong khu vực này, bao gồm Chùa Linh Ứng nổi tiếng với tượng Phật Bà Quan  m cao 67m. </p>
+                        </li>
+                        <li><p class="bold">Hoạt động du lịch:</p>
+                            <p>Khu vực Ngũ Hành Sơn cung cấp nhiều hoạt động du lịch thú vị:</p>
+                            <ul>
+                                <li>Thăm chùa chiền: Bạn có thể thăm các chùa và đền thờ trên năm ngọn núi để tìm hiểu về lịch sử và văn hóa tôn giáo của địa phương.</li>
+                                <li>Thăm các hang động và đá vôi: Khu vực này có nhiều hang động và tượng đá vôi độc đáo để tham quan.</li>
+                                <li>Trekking và leo núi: Bạn có thể thực hiện các hoạt động leo núi và trekking trên năm ngọn núi để tận hưởng cảnh quan thiên nhiên độc đáo.</li>
+                                <li>Thư giãn tại bãi biển An Bàng: Bãi biển An Bàng, nằm cách Ngũ Hành Sơn không xa, là nơi tuyệt vời để tắm biển và thư giãn.</li>
+                            </ul>        
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chi tiết Núi Thần Tài khi được bấm vào còn lại sẽ ẩn đi kể cả phần các địa điểm-->
+    <section class="detail" id="section10">
+        <div class="top-line"></div>
+        <div class="content">
+            <div class="container">
+                <p class="name"><b>Suối khoáng nóng Núi Thần Tài</b></p>
+                <p class="short-detail">&emsp;&emsp;&emsp;Suối Khoáng nóng Núi Thần Tài (Thần Tài Hot Springs) là một điểm đến nổi tiếng tại thành phố Đà Nẵng, Việt Nam. Đây là một khu du lịch nghỉ dưỡng nằm dưới chân ngọn núi Thần Tài và nổi tiếng với suối khoáng nóng tự nhiên, khu vườn thiên nhiên, và các hoạt động giải trí. Dưới đây là một giới thiệu về Suối Khoáng nóng Núi Thần Tài: </p>
+                <div class="row gy-3">
+                    <div class="main-img col-lg-8 col-12"><img width="100%" src="img/HomePage/nui-than-tai.jpg"></div>
+                    <div class="secondary-img col-lg-4 col-12"">
+                        <div class="row gy-3">
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/nui-than-tai.jpg"></div>
+                            <div class="img col-lg-12 col-6"><img width="100%" src="img/HomePage/nui-than-tai.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ol>
+                        <li><p class="bold">Vị trí:</p>
+                            <p>Suối Khoáng nóng Núi Thần Tài nằm khoảng 40 km về phía Tây của trung tâm thành phố Đà Nẵng, gần khu du lịch Bà Nà Hills và Bán đảo Sơn Trà. Điều này tạo ra một môi trường yên tĩnh và thiên nhiên tại vùng núi cao cấp. </p>                        </li>
+                        <li><p class="bold">Suối khoáng nóng tự nhiên:</p>
+                            <p>Khu du lịch này nổi tiếng với suối khoáng nóng tự nhiên có nhiệt độ khoảng 36-37 độ C. Suối khoáng nóng được cho là có lợi cho sức khỏe và sự thư giãn, và nó được sử dụng cho nhiều loại xông hơi và tắm khoáng.</p>             
+                        </li>
+                        <li><p class="bold">Thiên nhiên và cảnh quan:</p>
+                            <p>Suối Khoáng nóng Núi Thần Tài có môi trường thiên nhiên xanh mướt với rừng cây xanh và các hồ nước tự nhiên. Bạn có thể tham quan các khu vườn, quầy bar, và nhà hàng được thiết kế để tận hưởng không gian thiên nhiên.</p>
+                        </li>
+                        <li><p class="bold">Hoạt động giải trí:</p>
+                            <p>Ngoài việc tận hưởng suối khoáng nóng, Suối Khoáng nóng Núi Thần Tài còn cung cấp một loạt hoạt động giải trí và thư giãn bao gồm:</p>
+                            <ul>
+                                <li>Xông hơi và spa: Có các phòng xông hơi và dịch vụ spa để giúp du khách thư giãn và làm mới cơ thể.</li>
+                                <li>Hồ bơi: Có hồ bơi ngoài trời để tận hưởng ánh nắng mặt trời và nước biển khoáng.</li>
+                                <li>Nhà hàng và quán bar: Có nhiều nhà hàng và quán bar phục vụ các món ăn ngon và đồ uống tươi mát.</li>
+                                <li>Các hoạt động ngoài trời: Bạn có thể tham gia vào các hoạt động như đi bộ đường dài, thư giãn tại các khu vườn, và chiêm ngưỡng cảnh quan thiên nhiên.</li>
+                            </ul>               
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị thông số địa điểm, chuyến đi, chuyến bay,...-->
+    <section>
+        <div class="container">
+            <div class="small_section none col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="item">
+                    <div class="number">52</div>
+                    <p>Địa điểm</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-tents"></i></div>
+                <div class="item">
+                    <div class="number">47</div>
+                    <p>Ngày lễ</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="item">
+                    <div class="number">146</div>
+                    <p>Khách sạn</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-ship"></i></div>
+                <div class="item">
+                    <div class="number">94</div>
+                    <p>Du thuyền</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+                <div class="item">
+                    <div class="number">218</div>
+                    <p>Chuyến bay</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-car-side"></i></div>
+                <div class="item">
+                    <div class="number">386</div>
+                    <p>Chuyến xe</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--Phần hiển thị phần giới thiệu về ĐN Tour-->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="top">Giới Thiệu</h2>
+                    <h2 class="bottom"><b>Đà</b> Nẵng</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, commodi? Vel natus, tenetur molestias unde tempore reiciendis iste at quidem! Numquam, non incidunt. Doloremque eligendi, natus officia sapiente laboriosam blanditiis.</p>
+                    <div class="line-short"></div>
+                    <h3 class="signature">Le Thanh Nhan</h3>
+                </div>
+                <div class="col-lg-7">
+                    <iframe width="100%" height="120%" src="https://www.youtube.com/embed/glMTbJFZrkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần hiển thị chân trang-->
+    <footer class="site-footer">
+        <div class="email">
+            <div class="container">
+                <div class="text col-lg-5">
+                    <p>Đăng kí ngay hôm nay</p>
+                    <span><b>Nhận</b> ưu đãi mới nhất</span>
+                </div>
+                <div class="input col-lg-7">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" multiple spellcheck="true"  placeholder="Điền email của bạn ...">
+                    <button>send</button>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="img/Shared/logo.png">
+                    <div class="line-short"></div>
+                    <p class="text">
+                        <ul class="footer-links">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti ullam iste nesciunt 
+                                perferendis perspiciatis consectetur soluta beatae explicabo dolorum. 
+                                Sit ratione nobis illum voluptates debitis odio! Sed, quidem tempora?</p>
+                        </ul>
+                    </p>
+                    </div>
+                    <div class="vertical col-lg-4 col-md-3 col-xs-6">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <ul class="footer-links">
+                        <li class="icon"><i class="fa-solid fa-phone"></i> +84 96 174 7165</li>
+                        <li class="icon"><i class="fa-regular fa-envelope"></i> thanhnhan14547@gmail.com</li>
+                        <div class="icon"><i class="fa-brands fa-facebook"></i> Nhân Lê</div>
+                    </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-xs-6">
+                    <h6>liên kết</h6>
+                    <ul class="footer-links">
+                        <li><a href="index_Home.html">Trang chủ</a></li>
+                        <li><a href="index_Hotel.html">khách sạn</a></li>
+                        <li><a href="index_Detail_Location.html">Địa điểm</a></li>
+                        <li><a href="index_Detail_Location.html#beach">Bãi biển</a></li>
+                        <li><a href="index_Detail_Location.html#park">Công viên</a></li>
+                        <li><a href="index_Detail_Location.html#cuisine">Ẩm thực</a></li>
+                        <li><a href="index_Detail_Location.html#shopping">Mua sắm</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">&copy; Copyright 2017 <span><b>DN Tour </b></span> |  All Rights Reserved by <a href="#">Scanfcode</a>.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--Phần javascript sử lý việc ẩn hiện các phần giới thiệu-->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐNTour</title>
+    <link rel="stylesheet" href="style_Detail_Location.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Phần đầu trang gồm logo và các đường dẫn đến các trang-->
+    <header>
+        <nav>
+            <ul class="navbar-fruit">
+                <div class="col-lg-2 col-md-12 col-12"><img src="img/Shared/logo.png"></div>
+                <li class="col-lg-2 col-md-4 col-4"><a href="index_Home.html">Trang chủ</a></li>
+                <li class="col-lg-2 col-md-4 col-4"><a href="index_Hotel.html">Khách sạn</a></li>
+                <li class="col-lg-2 col-md-4 col-4">
+                    <a href="index_Detail_Location.html">Địa điểm</a>
+                    <ul class="submenu col-lg-2">
+                      <li><a href="index_Detail_Location.html#beach">Bãi Biển</a></li>
+                      <li><a href="index_Detail_Location.html#park">Công viên</a></li>
+                      <li><a href="index_Detail_Location.html#cuisine">Ẩm thực</a></li>
+                      <li style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;"><a href="index_Detail_Location.html#shopping">Mua sắm</a></li>
+                    </ul>
+                </li>
+              </ul>
+        </nav>
+    </header>
+
+    <!--Phần banner và phần giới thiệu ngắn về điểm đến phổ biến-->
+    <div id="recommend">
+        <div class="container">
+            <div class="row">
+                <div class="img col-lg-3 col-md-6 col-12">
+                    <img src="img/LocationPage/Beach/bai-bien-non-nuoc.jpg">
+                    <p><a href="#beach">Bãi Biển</a></p>
+                </div>
+                <div class="img col-lg-3 col-md-6 col-12">
+                    <img src="img/LocationPage/Park/mikazuki water park.jpg">
+                    <p><a href="#park">Công viên</a></p>
+                </div>
+                <div class="img col-lg-3 col-md-6 col-12">
+                    <img src="img/LocationPage/Cuisine/MiQuang.jpg">
+                    <p><a href="#cuisine">Ẩm thực</a></p>
+                </div>
+                <div class="img col-lg-3 col-md-6 col-12">
+                    <img src="img/LocationPage/shopping/LeDuan.jpg">
+                    <p><a href="#shopping">Mua sắm</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Phần giới thiệu các bãi biển-->
+    <section id="beach">
+        <div class="container">
+            <div class="top-line"></div>
+            <div id="banner-fruit">
+                <div class="text col-lg-7 col-md-12 col-12">
+                    <div class="title">
+                        <p class="yellow">ưu đãi đặc biệt</p>
+                        <p class="popular">Bãi biển<b>Phổ biến</b></p>
+                    </div>
+                    <div class="title-content">
+                        <p>Hạnh phúc đơn giản là cảm giác của một ngày cuối tuần thảnh thơi, cùng nhau tận hưởng từng khoảnh khắc!</p>
+                    </div>
+                </div>
+                <div class="img col-lg-5 col-md-12 col-12">
+                    <img src="img/HomePage/people.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img style="height: 251px;" src="img/LocationPage/Beach/bai-bien-non-nuoc.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bãi biển non nước</h3>
+                                <p>Bãi biển đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img style="height: 251px;" src="img/LocationPage/Beach/bien-rang.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bãi rạng Đà Nẵng</h3>
+                                <p>Bãi biển đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img style="height: 251px;" src="img/LocationPage/Beach/bien-nam-o.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bãi biển Nam Ô</h3>
+                                <p>Bãi biển đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img style="height: 251px;" src="img/LocationPage/Beach/bien-bac-my-an.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bãi biển Bắc Mỹ An</h3>
+                                <p>Bãi biển đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img style="height: 251px;" src="img/LocationPage/Beach/bien-xuan-thieu.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Biển Xuân Thiều</h3>
+                                <p>Bãi biển đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img style="height: 251px;" src="img/LocationPage/Beach/bien-lang-co.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bãi biển Lăng Cô</h3>
+                                <p>Bãi biển đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần giới thiệu các công viên-->
+    <section id="park">
+        <div class="container">
+            <div class="top-line"></div>
+            <div id="banner-fruit">
+                <div class="text col-lg-7 col-md-12 col-12">
+                    <div class="title">
+                        <p class="yellow">ưu đãi đặc biệt</p>
+                        <p class="popular">Công viên<b>Phổ biến</b></p>
+                    </div>
+                    <div class="title-content">
+                        <p>Hạnh phúc đơn giản là cảm giác của một ngày cuối tuần thảnh thơi, cùng nhau tận hưởng từng khoảnh khắc!</p>
+                    </div>
+                </div>
+                <div class="img col-lg-5 col-md-12 col-12">
+                    <img src="img/HomePage/people.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Park/mikazuki water park.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Mikazuki Water Park</h3>
+                                <p>Công viên đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Park/APEC.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Công viên APEC</h3>
+                                <p>Công viên đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Park/thanh-nien.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Công viên Thanh Niên</h3>
+                                <p>Công viên đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Park/cong-vien-bien-dong.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Công viên Biển Đông</h3>
+                                <p>Công viên đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Park/cong-vien-Helio.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Công viên Helio</h3>
+                                <p>Công viên đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Park/cong-vien-ky-quan.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3 style="font-size: 32px;">Công viên kỳ quan thế giới</h3>
+                                <p>Công viên đẹp ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần giới thiệu các món ăn-->
+    <section id="cuisine">
+        <div class="container">
+            <div class="top-line"></div>
+            <div id="banner-fruit">
+                <div class="text col-lg-7 col-md-12 col-12">
+                    <div class="title">
+                        <p class="yellow">ưu đãi đặc biệt</p>
+                        <p class="popular">Món ăn <b>Đặc sắc</b></p>
+                    </div>
+                    <div class="title-content">
+                        <p>Cứ ăn đi cho đời nó khỏe, tăng cân là việc của ngày mai thì mai tính.</p>
+                    </div>
+                </div>
+                <div class="img col-lg-5 col-md-12 col-12">
+                    <img src="img/HomePage/people.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Cuisine/MiQuang.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Mì Quảng</h3>
+                                <p>Món ăn ngon ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Cuisine/bun-bo-hue.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bún bò Huế</h3>
+                                <p>Món ăn ngon ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Cuisine/banh-xeo.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bánh xèo miền Trung</h3>
+                                <p>Món ăn ngon ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Cuisine/goi-cuon.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Gỏi cuốn</h3>
+                                <p>Món ăn ngon ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Cuisine/hai-san.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Hải sản tươi sống</h3>
+                                <p>Món ăn ngon ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/Cuisine/banh-beo.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Bánh bèo</h3>
+                                <p>Món ăn ngon ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần giới thiệu khu mua sắm-->
+    <section id="shopping">
+        <div class="container">
+            <div class="top-line"></div>
+            <div id="banner-fruit">
+                <div class="text col-lg-7 col-md-12 col-12">
+                    <div class="title">
+                        <p class="yellow">ưu đãi đặc biệt</p>
+                        <p class="popular">Địa điểm <b>Mua sắm</b></p>
+                    </div>
+                    <div class="title-content">
+                        <p>Thanh xuân như một tách trà. Đồ hot đồ đẹp thì phải ghé ngay.</p>
+                    </div>
+                </div>
+                <div class="img col-lg-5 col-md-12 col-12">
+                    <img src="img/HomePage/people.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/shopping/LeDuan.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Chợ đêm Lê Duẩn</h3>
+                                <p>Địa điểm mua sắm ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/shopping/cho-han.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Chợ Hàn</h3>
+                                <p>Địa điểm mua sắm ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/shopping/cho-con.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Chợ Cồn</h3>
+                                <p>Địa điểm mua sắm ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/shopping/cho-bac-my-an.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Chợ Bắc Mỹ An</h3>
+                                <p>Địa điểm mua sắm ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/shopping/vincom.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3>Vincom Plaza</h3>
+                                <p>Địa điểm mua sắm ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="pic">
+                        <a href="#" class="img">
+                            <img src="img/LocationPage/shopping/souvenirs.jpg">
+                        </a>
+                        <div class="hover">
+                        </div>
+                        <div class="page" href="#">
+                            <div class="item_content">
+                                <h3 style="font-size: 33px;">Đà Nẵng Souvenir & Cafe</h3>
+                                <p>Địa điểm mua sắm ở Đà Nẵng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Phần hiển thị thông số địa điểm, chuyến đi, chuyến bay,...-->
+    <section>
+        <div class="container">
+            <div class="small_section none col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="item">
+                    <div class="number">52</div>
+                    <p>Địa điểm</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-tents"></i></div>
+                <div class="item">
+                    <div class="number">47</div>
+                    <p>Ngày lễ</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="item">
+                    <div class="number">146</div>
+                    <p>Khách sạn</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-ship"></i></div>
+                <div class="item">
+                    <div class="number">94</div>
+                    <p>Du thuyền</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+                <div class="item">
+                    <div class="number">218</div>
+                    <p>Chuyến bay</p>
+                </div>
+            </div>
+            <div class="small_section line col-lg-2 col-xs-6">
+                <div class="icon"><i class="fa-solid fa-car-side"></i></div>
+                <div class="item">
+                    <div class="number">386</div>
+                    <p>Chuyến xe</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!--Phần hiển thị chân trang-->
+    <footer class="site-footer">
+        <div class="email">
+            <div class="container">
+                <div class="text col-lg-5">
+                    <p>Đăng kí ngay hôm nay</p>
+                    <span><b>Nhận</b> ưu đãi mới nhất</span>
+                </div>
+                <div class="input col-lg-7">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" multiple spellcheck="true"  placeholder="Điền email của bạn ...">
+                    <button>send</button>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="img/Shared/logo.png">
+                    <div class="line-short"></div>
+                    <p class="text">
+                        <ul class="footer-links">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti ullam iste nesciunt 
+                                perferendis perspiciatis consectetur soluta beatae explicabo dolorum. 
+                                Sit ratione nobis illum voluptates debitis odio! Sed, quidem tempora?</p>
+                        </ul>
+                    </p>
+                    </div>
+                    <div class="vertical col-lg-4 col-md-3 col-xs-6">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <ul class="footer-links">
+                        <li class="icon"><i class="fa-solid fa-phone"></i> +84 96 174 7165</li>
+                        <li class="icon"><i class="fa-regular fa-envelope"></i> thanhnhan14547@gmail.com</li>
+                        <div class="icon"><i class="fa-brands fa-facebook"></i> Nhân Lê</div>
+                    </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-xs-6">
+                    <h6>liên kết</h6>
+                    <ul class="footer-links">
+                        <li><a href="index_Home.html">Trang chủ</a></li>
+                        <li><a href="index_Hotel.html">khách sạn</a></li>
+                        <li><a href="index_Detail_Location.html">Địa điểm</a></li>
+                        <li><a href="index_Detail_Location.html#beach">Bãi biển</a></li>
+                        <li><a href="index_Detail_Location.html#park">Công viên</a></li>
+                        <li><a href="index_Detail_Location.html#cuisine">Ẩm thực</a></li>
+                        <li><a href="index_Detail_Location.html#shopping">Mua sắm</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">&copy; Copyright 2017 <span><b>DN Tour </b></span> |  All Rights Reserved by <a href="#">Scanfcode</a>.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

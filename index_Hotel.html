@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto:wght@500;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_Hotel.css">
+    <script src="https://kit.fontawesome.com/a68c539f76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body>
+    <!--Phần đầu trang gồm logo và các đường dẫn đến các trang-->
+    <header>
+        <nav>
+            <ul class="navbar-fruit">
+                <div class="col-lg-2 col-md-12 col-12"><img src="img/Shared/logo.png"></div>
+                <li class="col-lg-2 col-md-4 col-4"><a href="index_Home.html">Trang chủ</a></li>
+                <li class="col-lg-2 col-md-4 col-4"><a href="index_Hotel.html">Khách sạn</a></li>
+                <li class="col-lg-2 col-md-4 col-4">
+                  <a href="index_Detail_Location.html">Địa điểm</a>
+                  <ul class="submenu col-lg-2">
+                    <li><a href="index_Detail_Location.html#beach">Bãi Biển</a></li>
+                    <li><a href="index_Detail_Location.html#park">Công viên</a></li>
+                    <li><a href="index_Detail_Location.html#cuisine">Ẩm thực</a></li>
+                    <li style="border-bottom-left-radius:10px;border-bottom-right-radius:10px;"><a href="index_Detail_Location.html#shopping">Mua sắm</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+    </header>
+    
+    <!--Phần banner và phần giới thiệu ngắn về điểm đến phổ biến-->
+    <div id="banner-fruit">
+        <div style="--bs-gutter-x: 0;" class="row">
+            <div class="text col-lg-7 col-md-12 col-12">
+                <div class="title">
+                    <p class="yellow">Đánh giá hàng đầu</p>
+                    <p class="popular">Khách sạn <b>Khuyến nghị</b></p>
+                </div>
+                <div class="title-content">
+                    <p>Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà Bán đảo sơn trà </p>
+                </div>
+            </div>
+            <div class="img col-lg-4 col-md-12 col-12">
+                <img style="width: 550px;height: 269px;" src="img/HotelPage/People1.png">
+            </div>
+        </div>
+    </div>
+
+    <!--Phần hiển thị các khách sạn đề xuất-->
+    <section id="section1" class="detail active">
+        <div style="--bs-gutter-x: 0;" class="row gy-3">
+            <div id="slide" class="col-lg-4 col-md-6 col-12">
+                <div class="slip">
+                    <div class="text">
+                        <div class="name">The Five Villas & Resort</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i>&emsp;Điện Ngọc, Điện Bàn, Quảng Nam</div>
+                        <div style="text-shadow: 0 0 7px #d49f00;" class="stars">
+                              <label class="stars"><i class="fa-solid fa-star"></i></label>
+                              <label class="stars"><i class="fa-solid fa-star"></i></label>
+                              <label class="stars"><i class="fa-solid fa-star"></i></label>
+                              <label class="stars"><i class="fa-solid fa-star"></i></label>
+                              <label class="stars"><i class="fa-solid fa-star"></i></label>
+                          </div>
+                        <div class="cost">
+                            <p class="number">7.800.000VND</p>
+                            <p class="night">Một đêm</p>
+                        </div>
+                        <div class="detail-text">&emsp;&emsp;Khách sạn này là lựa chọn hoàn hảo cho các kỳ nghỉ mát lãng mạn hay tuần trăng mật của các cặp đôi. Quý khách hãy tận hưởng những đêm đáng nhớ nhất cùng người thương của mình tại The Five Villas & Resort Quangnam - Danang</div>
+                        <div class="chose row">
+                            <a class="read col-lg-6 col-12" href="#" onclick="showSection('section2')">read more</a>
+                            <a class="book col-lg-5 col-12" href="#">booking</a>
+                        </div>
+                    </div>
+                    <img class="img" src="img/HotelPage/thefivevillas-1.jpg">
+                </div>
+            </div>
+            <div id="slide" class="col-lg-4 col-md-6 col-12">
+                <div class="slip">
+                    <div class="text">
+                        <div class="name">Melia Vinpearl Riverfront</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i>&emsp;341 Đ. Trần Hưng Đạo, An Hải Bắc, Sơn Trà, Đà Nẵng</div>
+                        <div class="stars">
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars off"><i class="fa-regular fa-star"></i></label>
+                        </div>
+                        <div class="cost">
+                            <p class="number">1.650.219VND</p>
+                            <p class="night">Một đêm</p>
+                        </div>
+                        <div class="detail-text">&emsp;&emsp;Melia Vinpearl Danang Riverfront là lựa chọn sáng giá dành cho những ai đang tìm kiếm một trải nghiệm xa hoa đầy thú vị trong kỳ nghỉ của mình. Lưu trú tại đây cũng là cách để quý khách chiều chuộng bản thân với những dịch vụ xuất sắc nhất và khiến kỳ nghỉ của mình trở nên thật đáng nhớ.</div>
+                        <div class="chose row">
+                            <a class="read col-lg-6 col-12" href="#" onclick="showSection('section3')">read more</a>
+                            <a class="book col-lg-5 col-12" href="#">booking</a>
+                        </div>
+                    </div>
+                    <img class="img" src="img/HotelPage/Melia-1.jpg">
+                </div>
+            </div>
+            <div id="slide" class="col-lg-4 col-md-6 col-12">
+                <div class="slip">
+                    <div class="text">
+                        <div class="name">Mikazuki Nhật Bản</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i>&emsp;Nguyễn Tất Thành, Hoà Hiệp Nam, Liên Chiểu, Đà Nẵng</div>
+                        <div class="stars">
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star-half-stroke"></i></label>
+                        </div>
+                        <div class="cost">
+                            <p class="number">1.937.000VND</p>
+                            <p class="night">Một đêm</p>
+                        </div>
+                        <div class="detail-text">&emsp;&emsp;Dù quý khách muốn tổ chức một sự kiện hay các dịp kỷ niệm đặc biệt khác, Da Nang – Mikazuki JAPANESE RESORTS & SPA là lựa chọn tuyệt vời cho quý khách với phòng chức năng rộng lớn, được trang bị đầy đủ để sẵn sàng đáp ứng mọi yêu cầu.</div>
+                        <div class="chose row">
+                            <a class="read col-lg-6 col-12" href="#" onclick="showSection('section4')">read more</a>
+                            <a class="book col-lg-5 col-12" href="#">booking</a>
+                        </div>
+                    </div>
+                    <img class="img" src="img/HotelPage/Mikazuki-1.jpg">
+                </div>
+            </div>
+            <div id="slide" class="col-lg-4 col-md-6 col-12">
+                <div class="slip">
+                    <div class="text">
+                        <div class="name">Gold Plaza Hotel</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i>&emsp;11 Trần Thị Lý, Hoà Cường Bắc, Hải Châu, Đà Nẵng</div>
+                        <div class="stars">
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars off"><i class="fa-regular fa-star"></i></label>
+                            <label class="stars off"><i class="fa-regular fa-star"></i></label>
+                        </div>
+                        <div class="cost">
+                            <p class="number">557.000VND</p>
+                            <p class="night">Một đêm</p>
+                        </div>
+                        <div class="detail-text">&emsp;&emsp;Tọa lạc gần sân bay, Gold Plaza Hotel Da Nang là nơi nghỉ ngơi lý tưởng trong lúc quý khách đang chờ chuyến bay kế tiếp. Quý khách có thể tận hưởng không gian nghỉ dưỡng vừa ý nơi đây trong quá trình quá cảnh.</div>
+                        <div class="chose row">
+                            <a class="read col-lg-6 col-12" href="#" onclick="showSection('section5')">read more</a>
+                            <a class="book col-lg-5 col-12" href="#">booking</a>
+                        </div>
+                    </div>
+                    <img class="img" src="img/HotelPage/goldplaza-1.jpg">
+                </div>
+            </div>
+            <div id="slide" class="col-lg-4 col-md-6 col-12">
+                <div class="slip">
+                    <div class="text">
+                        <div class="name">Sala Da Nang Beach Hotel</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i>&emsp;36-38 Đ. Lâm Hoành, Phước Mỹ, Sơn Trà, Đà Nẵng</div>
+                        <div class="stars">
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars off"><i class="fa-regular fa-star"></i></label>
+                        </div>
+                        <div class="cost">
+                            <p class="number">1.370.000VND</p>
+                            <p class="night">Một đêm</p>
+                        </div>
+                        <div class="detail-text">&emsp;&emsp;Sala Danang Beach Hotel là lựa chọn sáng giá dành cho những ai đang tìm kiếm một trải nghiệm xa hoa đầy thú vị trong kỳ nghỉ của mình. Lưu trú tại đây cũng là cách để quý khách chiều chuộng bản thân với những dịch vụ xuất sắc nhất và khiến kỳ nghỉ của mình trở nên thật đáng nhớ.</div>
+                        <div class="chose row">
+                            <a class="read col-lg-6 col-12" href="#" onclick="showSection('section6')">read more</a>
+                            <a class="book col-lg-5 col-12" href="#">booking</a>
+                        </div>
+                    </div>
+                    <img class="img" src="img/HotelPage/sala-1.jpg">
+                </div>
+            </div>
+            <div id="slide" class="col-lg-4 col-md-6 col-12">
+                <div class="slip">
+                    <div class="text">
+                        <div class="name">Hilton Da Nang</div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i>&emsp;50 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng</div>
+                        <div class="stars">
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star"></i></label>
+                            <label class="stars"><i class="fa-solid fa-star-half-stroke"></i></label>
+                        </div>
+                        <!-- <div class="stars">
+                            <form action="">
+                              <input class="star star-5" id="star-5" type="radio" name="star"/>
+                              <label class="star star-5" for="star-5"></label>
+                              <input class="star star-4" id="star-4" type="radio" name="star"/>
+                              <label class="star star-4" for="star-4"></label>
+                              <input class="star star-3" id="star-3" type="radio" name="star"/>
+                              <label class="star star-3" for="star-3"></label>
+                              <input class="star star-2" id="star-2" type="radio" name="star"/>
+                              <label class="star star-2" for="star-2"></label>
+                              <input class="star star-1" id="star-1" type="radio" name="star"/>
+                              <label class="star star-1" for="star-1"></label>
+                            </form>
+                          </div> -->
+                        <div class="cost">
+                            <p class="number">2.128.000VND</p>
+                            <p class="night">Một đêm</p>
+                        </div>
+                        <div class="detail-text">&emsp;&emsp;Khách sạn hiện đại này nằm trong một tòa nhà cao tầng, nhìn ra Sông Hán và Vịnh Đà Nẵng, cách Nhà thờ Gothic Đà Nẵng đầy màu sắc 1 km và cách Cầu Rồng 4 km. Cách Sân bay Quốc tế Đà Nẵng 5 km.</div>
+                        <div class="chose row">
+                            <a class="read col-lg-6 col-12" href="#" onclick="showSection('section7')">read more</a>
+                            <a class="book col-lg-5 col-12" href="#">booking</a>
+                        </div>
+                    </div>
+                    <img class="img" src="img/HotelPage/hilton-1.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần chi tiết về The Five villas & resort-->
+    <section class="detail" id="section2">
+        <div class="container">
+            <div class="name" style=" border-top: 2px solid #ffc107;">The Five Villas & Resort  QuangNam - DaNang</div>
+            <span style="padding-right: 20px;" class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <span style="font-size: 15px;">218 Đánh giá</span>
+            <div class="address"><i class="fa-solid fa-location-dot"></i>&emsp;Điện Ngọc, Điện Bàn, Quảng Nam</div>
+            <div class="row gy-3">
+                <div class="main-img col-lg-8 col-12"><img width="100%" height="560px" src="img/HotelPage/thefivevillas-1.jpg"></div>
+                <div class="secondary-img col-lg-4 col-12"">
+                    <div class="row gy-3">
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/thefivevillas-2.jpg"></div>
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/thefivevillas-3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="name">Giới thiệu</div>
+                <div class="row">
+                    <div class="overview col-lg-6 col-md-12 col-12">
+                        <div class="rating">
+                            <span style="font-size: 42px; font-weight: bold;">5.0</span>
+                            <div class="feel">
+                                <div class="feeling">tuyệt vời</div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span style="font-size: 15px;" class="rate">218 Đánh giá</span>
+                            </div>
+                        </div>
+                        <span style="font-size: 14px;">Số 67 trong 580 khách sạn tại Đà Nẵng</span>
+                        <div class="other">
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="text">Địa điểm</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="text">sự sạch sẽ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="text">Dịch vụ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="text">Giá trị</span>
+                            </div>
+                        </div>
+                        <h2>thông tin cần biết</h2>
+                        <div class="bottom">
+                            <div class="row gy-5">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>hạng khách sạn</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Ngôn ngữ sử dụng</h5>
+                                    <p>Tiếng Việt</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Phong cách khách sạn</h5>
+                                    <p>Lãng mạn</p>
+                                    <p>Thời thượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info col-lg-6 col-md-12 col-12">
+                        <div class="text">
+                            <h2>Tiện nghi của khách sạn</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water-ladder"></i>&emsp;Có hồ bơi riêng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-user-tie"></i>&emsp;Lễ tân 24h</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-kitchen-set"></i>&emsp;Nhà bếp</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-utensils"></i>&emsp;Dụng cụ nhà bếp đầy đủ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-chart-area"></i>&emsp;Khu vực chờ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water"></i>&emsp;Nước nóng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-fan"></i>&emsp;Máy lạnh</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-burger"></i>&emsp;Khu ẩm thực riêng biệt</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-wifi"></i>&emsp;Wifi từng khu vực</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-elevator"></i>&emsp;Thang máy</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-square-parking"></i>&emsp;Chỗ đậu xe</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;" class="text">
+                            <h2>Loại phòng</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-ban-smoking"></i>&emsp;Phòng không hút thuốc</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng Suite</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng cho gia đình</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>Comment</h2>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-1.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Lê Văn A</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-2.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Đào thị B</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-3.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Nguyễn Văn C</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần chi tiết về Melia Vinpearl Danang Riverfront-->
+    <section class="detail" id="section3">
+        <div class="container">
+            <div class="name" style=" border-top: 2px solid #ffc107;">Melia Vinpearl Danang Riverfront</div>
+            <span style="padding-right: 20px;" class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+            <span style="font-size: 15px;">358 Đánh giá</span>
+            <div class="address"><i class="fa-solid fa-location-dot"></i>&emsp;341 Đ. Trần Hưng Đạo, An Hải Bắc, Sơn Trà, Đà Nẵng</div>
+            <div class="row gy-3">
+                <div class="main-img col-lg-8 col-12"><img width="100%" height="560px" src="img/HotelPage/Melia-1.jpg"></div>
+                <div class="secondary-img col-lg-4 col-12"">
+                    <div class="row gy-3">
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/Melia-2.jpg"></div>
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/Melia-3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="name">Giới thiệu</div>
+                <div class="row">
+                    <div class="overview col-lg-6 col-md-12 col-12">
+                        <div class="rating">
+                            <span style="font-size: 42px; font-weight: bold;">4.0</span>
+                            <div class="feel">
+                                <div class="feeling">tuyệt vời</div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span style="font-size: 15px;" class="rate">358 Đánh giá</span>
+                            </div>
+                        </div>
+                        <span style="font-size: 14px;">Số 67 trong 580 khách sạn tại Đà Nẵng</span>
+                        <div class="other">
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Địa điểm</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">sự sạch sẽ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="text">Dịch vụ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Giá trị</span>
+                            </div>
+                        </div>
+                        <h2>thông tin cần biết</h2>
+                        <div class="bottom">
+                            <div class="row gy-5">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>hạng khách sạn</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Ngôn ngữ sử dụng</h5>
+                                    <p>Tiếng Việt</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Phong cách khách sạn</h5>
+                                    <p>Lãng mạn</p>
+                                    <p>Thời thượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info col-lg-6 col-md-12 col-12">
+                        <div class="text">
+                            <h2>Tiện nghi của khách sạn</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water-ladder"></i>&emsp;Có hồ bơi riêng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-user-tie"></i>&emsp;Lễ tân 24h</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-kitchen-set"></i>&emsp;Nhà bếp</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-utensils"></i>&emsp;Dụng cụ nhà bếp đầy đủ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-chart-area"></i>&emsp;Khu vực chờ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water"></i>&emsp;Nước nóng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-fan"></i>&emsp;Máy lạnh</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-burger"></i>&emsp;Khu ẩm thực riêng biệt</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-wifi"></i>&emsp;Wifi từng khu vực</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-elevator"></i>&emsp;Thang máy</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-square-parking"></i>&emsp;Chỗ đậu xe</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;" class="text">
+                            <h2>Loại phòng</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-ban-smoking"></i>&emsp;Phòng không hút thuốc</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng Suite</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng cho gia đình</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>Comment</h2>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-1.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Lê Văn A</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-2.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Đào thị B</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-3.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Nguyễn Văn C</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần chi tiết về Khu nghỉ dưỡng  và Spa Mikazuki Nhật Bản-->
+    <section class="detail" id="section4">
+        <div class="container">
+            <div class="name" style=" border-top: 2px solid #ffc107;">Khu nghỉ dưỡng  và Spa Mikazuki Nhật Bản</div>
+            <span style="padding-right: 20px;" class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+            <span style="font-size: 15px;">75 Đánh giá</span>
+            <div class="address"><i class="fa-solid fa-location-dot"></i>&emsp;Nguyễn Tất Thành, Hoà Hiệp Nam, Liên Chiểu, Đà Nẵng</div>
+            <div class="row gy-3">
+                <div class="main-img col-lg-8 col-12"><img width="100%" height="560px" src="img/HotelPage/Mikazuki-1.jpg"></div>
+                <div class="secondary-img col-lg-4 col-12"">
+                    <div class="row gy-3">
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/Mikazuki-2.jpg"></div>
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/Mikazuki-3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="name">Giới thiệu</div>
+                <div class="row">
+                    <div class="overview col-lg-6 col-md-12 col-12">
+                        <div class="rating">
+                            <span style="font-size: 42px; font-weight: bold;">3.5</span>
+                            <div class="feel">
+                                <div class="feeling">Tốt</div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span style="font-size: 15px;" class="rate">75 Đánh giá</span>
+                            </div>
+                        </div>
+                        <span style="font-size: 14px;">Số 67 trong 580 khách sạn tại Đà Nẵng</span>
+                        <div class="other">
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Địa điểm</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">sự sạch sẽ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Dịch vụ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Giá trị</span>
+                            </div>
+                        </div>
+                        <h2>thông tin cần biết</h2>
+                        <div class="bottom">
+                            <div class="row gy-5">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>hạng khách sạn</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Ngôn ngữ sử dụng</h5>
+                                    <p>Tiếng Việt</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Phong cách khách sạn</h5>
+                                    <p>Lãng mạn</p>
+                                    <p>Thời thượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info col-lg-6 col-md-12 col-12">
+                        <div class="text">
+                            <h2>Tiện nghi của khách sạn</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water-ladder"></i>&emsp;Có hồ bơi riêng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-user-tie"></i>&emsp;Lễ tân 24h</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-kitchen-set"></i>&emsp;Nhà bếp</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-utensils"></i>&emsp;Dụng cụ nhà bếp đầy đủ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-chart-area"></i>&emsp;Khu vực chờ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water"></i>&emsp;Nước nóng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-fan"></i>&emsp;Máy lạnh</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-burger"></i>&emsp;Khu ẩm thực riêng biệt</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-wifi"></i>&emsp;Wifi từng khu vực</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-elevator"></i>&emsp;Thang máy</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-square-parking"></i>&emsp;Chỗ đậu xe</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;" class="text">
+                            <h2>Loại phòng</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-ban-smoking"></i>&emsp;Phòng không hút thuốc</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng Suite</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng cho gia đình</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>Comment</h2>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-1.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Lê Văn A</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-2.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Đào thị B</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-3.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Nguyễn Văn C</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Phần chi tiết về Gold Plaza Hotel Da Nang-->
+    <section class="detail" id="section5">
+        <div class="container">
+            <div class="name" style=" border-top: 2px solid #ffc107;">Gold Plaza Hotel Da Nang</div>
+            <span style="padding-right: 20px;" class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+            <span style="font-size: 15px;">75 Đánh giá</span>
+            <div class="address"><i class="fa-solid fa-location-dot"></i>&emsp;11 Trần Thị Lý, Hoà Cường Bắc, Hải Châu, Đà Nẵng</div>
+            <div class="row gy-3">
+                <div class="main-img col-lg-8 col-12"><img width="100%" height="560px" src="img/HotelPage/goldplaza-1.jpg"></div>
+                <div class="secondary-img col-lg-4 col-12"">
+                    <div class="row gy-3">
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/goldplaza-2.jpg"></div>
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/goldplaza-3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="name">Giới thiệu</div>
+                <div class="row">
+                    <div class="overview col-lg-6 col-md-12 col-12">
+                        <div class="rating">
+                            <span style="font-size: 42px; font-weight: bold;">3.0</span>
+                            <div class="feel">
+                                <div class="feeling">Bình thường</div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span style="font-size: 15px;" class="rate">75 Đánh giá</span>
+                            </div>
+                        </div>
+                        <span style="font-size: 14px;">Số 67 trong 580 khách sạn tại Đà Nẵng</span>
+                        <div class="other">
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Địa điểm</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">sự sạch sẽ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Dịch vụ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Giá trị</span>
+                            </div>
+                        </div>
+                        <h2>thông tin cần biết</h2>
+                        <div class="bottom">
+                            <div class="row gy-5">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>hạng khách sạn</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Ngôn ngữ sử dụng</h5>
+                                    <p>Tiếng Việt</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Phong cách khách sạn</h5>
+                                    <p>Lãng mạn</p>
+                                    <p>Thời thượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info col-lg-6 col-md-12 col-12">
+                        <div class="text">
+                            <h2>Tiện nghi của khách sạn</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water-ladder"></i>&emsp;Có hồ bơi riêng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-user-tie"></i>&emsp;Lễ tân 24h</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-kitchen-set"></i>&emsp;Nhà bếp</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-utensils"></i>&emsp;Dụng cụ nhà bếp đầy đủ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-chart-area"></i>&emsp;Khu vực chờ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water"></i>&emsp;Nước nóng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-fan"></i>&emsp;Máy lạnh</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-burger"></i>&emsp;Khu ẩm thực riêng biệt</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-wifi"></i>&emsp;Wifi từng khu vực</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-elevator"></i>&emsp;Thang máy</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-square-parking"></i>&emsp;Chỗ đậu xe</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;" class="text">
+                            <h2>Loại phòng</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-ban-smoking"></i>&emsp;Phòng không hút thuốc</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng Suite</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng cho gia đình</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>Comment</h2>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-1.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Lê Văn A</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-2.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Đào thị B</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-3.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Nguyễn Văn C</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần chi tiết về Sala Da Nang Beach Hotel-->
+    <section class="detail" id="section6">
+        <div class="container">
+            <div class="name" style=" border-top: 2px solid #ffc107;">Sala Da Nang Beach Hotel</div>
+            <span style="padding-right: 20px;" class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </span>
+            <span style="font-size: 15px;">300 Đánh giá</span>
+            <div class="address"><i class="fa-solid fa-location-dot"></i>&emsp;36-38 Đ. Lâm Hoành, Phước Mỹ, Sơn Trà, Đà Nẵng</div>
+            <div class="row gy-3">
+                <div class="main-img col-lg-8 col-12"><img width="100%" height="560px" src="img/HotelPage/sala-1.jpg"></div>
+                <div class="secondary-img col-lg-4 col-12"">
+                    <div class="row gy-3">
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/sala-2.jpg"></div>
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/sala-3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="name">Giới thiệu</div>
+                <div class="row">
+                    <div class="overview col-lg-6 col-md-12 col-12">
+                        <div class="rating">
+                            <span style="font-size: 42px; font-weight: bold;">4.0</span>
+                            <div class="feel">
+                                <div class="feeling">Tốt</div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span style="font-size: 15px;" class="rate">300 Đánh giá</span>
+                            </div>
+                        </div>
+                        <span style="font-size: 14px;">Số 67 trong 580 khách sạn tại Đà Nẵng</span>
+                        <div class="other">
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Địa điểm</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">sự sạch sẽ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Dịch vụ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                                <span class="text">Giá trị</span>
+                            </div>
+                        </div>
+                        <h2>thông tin cần biết</h2>
+                        <div class="bottom">
+                            <div class="row gy-5">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>hạng khách sạn</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Ngôn ngữ sử dụng</h5>
+                                    <p>Tiếng Việt</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Phong cách khách sạn</h5>
+                                    <p>Lãng mạn</p>
+                                    <p>Thời thượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info col-lg-6 col-md-12 col-12">
+                        <div class="text">
+                            <h2>Tiện nghi của khách sạn</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water-ladder"></i>&emsp;Có hồ bơi riêng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-user-tie"></i>&emsp;Lễ tân 24h</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-kitchen-set"></i>&emsp;Nhà bếp</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-utensils"></i>&emsp;Dụng cụ nhà bếp đầy đủ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-chart-area"></i>&emsp;Khu vực chờ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water"></i>&emsp;Nước nóng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-fan"></i>&emsp;Máy lạnh</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-burger"></i>&emsp;Khu ẩm thực riêng biệt</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-wifi"></i>&emsp;Wifi từng khu vực</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-elevator"></i>&emsp;Thang máy</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-square-parking"></i>&emsp;Chỗ đậu xe</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;" class="text">
+                            <h2>Loại phòng</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-ban-smoking"></i>&emsp;Phòng không hút thuốc</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng Suite</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng cho gia đình</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>Comment</h2>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-1.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Lê Văn A</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-2.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Đào thị B</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-3.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Nguyễn Văn C</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Phần chi tiết về Hilton Da Nang-->
+    <section class="detail" id="section7">
+        <div class="container">
+            <div class="name" style=" border-top: 2px solid #ffc107;">Hilton Da Nang</div>
+            <span style="padding-right: 20px;" class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </span>
+            <span style="font-size: 15px;">482 Đánh giá</span>
+            <div class="address"><i class="fa-solid fa-location-dot"></i>&emsp;50 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng</div>
+            <div class="row gy-3">
+                <div class="main-img col-lg-8 col-12"><img width="100%" height="560px" src="img/HotelPage/hilton-1.jpg"></div>
+                <div class="secondary-img col-lg-4 col-12"">
+                    <div class="row gy-3">
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/hilton-2.jpg"></div>
+                        <div class="img col-lg-12 col-6"><img width="100%" height="275px" src="img/HotelPage/hilton-3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <div class="name">Giới thiệu</div>
+                <div class="row">
+                    <div class="overview col-lg-6 col-md-12 col-12">
+                        <div class="rating">
+                            <span style="font-size: 42px; font-weight: bold;">4.5</span>
+                            <div class="feel">
+                                <div class="feeling">Tuyệt vời</div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                                <span style="font-size: 15px;" class="rate">482 Đánh giá</span>
+                            </div>
+                        </div>
+                        <span style="font-size: 14px;">Số 67 trong 580 khách sạn tại Đà Nẵng</span>
+                        <div class="other">
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                                <span class="text">Địa điểm</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                                <span class="text">sự sạch sẽ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                                <span class="text">Dịch vụ</span>
+                            </div>
+                            <div>
+                                <span class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                                <span class="text">Giá trị</span>
+                            </div>
+                        </div>
+                        <h2>thông tin cần biết</h2>
+                        <div class="bottom">
+                            <div class="row gy-5">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>hạng khách sạn</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Ngôn ngữ sử dụng</h5>
+                                    <p>Tiếng Việt</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <h5>Phong cách khách sạn</h5>
+                                    <p>Lãng mạn</p>
+                                    <p>Thời thượng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info col-lg-6 col-md-12 col-12">
+                        <div class="text">
+                            <h2>Tiện nghi của khách sạn</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water-ladder"></i>&emsp;Có hồ bơi riêng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-user-tie"></i>&emsp;Lễ tân 24h</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-kitchen-set"></i>&emsp;Nhà bếp</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-utensils"></i>&emsp;Dụng cụ nhà bếp đầy đủ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-chart-area"></i>&emsp;Khu vực chờ</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-water"></i>&emsp;Nước nóng</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-fan"></i>&emsp;Máy lạnh</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-burger"></i>&emsp;Khu ẩm thực riêng biệt</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-wifi"></i>&emsp;Wifi từng khu vực</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-elevator"></i>&emsp;Thang máy</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-square-parking"></i>&emsp;Chỗ đậu xe</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;" class="text">
+                            <h2>Loại phòng</h2>
+                            <div class="row">
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-ban-smoking"></i>&emsp;Phòng không hút thuốc</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng Suite</p>
+                                <p class="col-lg-6 col-md-6 col-12"><i class="fa-solid fa-bed"></i>&emsp;Phòng cho gia đình</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>Comment</h2>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-1.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Lê Văn A</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-2.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Đào thị B</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+                <div class="row people">
+                    <div class="avata col-lg-2 col-md-4 col-12"><img src="img/HotelPage/avt/people-3.jpg"></div>
+                    <div class="cmt col-lg-10 col-md-8 col-12">
+                        <div class="row">
+                            <div class="left col-lg-10 col-md-6 col-12">
+                                <h3>Nguyễn Văn C</h3>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="right col-lg-2 col-md-6 col-12">
+                                <div class="star-vote">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="time">
+                                    T7, 22-06-2024
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi iste explicabo perferendis ipsam ut! Minus non modi dolorem consectetur sunt quos alias totam, architecto, asperiores necessitatibus magni voluptatem itaque! Itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--phần hiển thị các đánh giá cúa những khách hàng đã đi-->
+    <section id="section1" class="detail active" style="margin: 20px 0;">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="card col-lg-4 col-md-6 col-12">
+                    <div class="content">
+                        <div class="card__img">
+                            <img src="img/LocationPage/Park/cong-vien-Helio.jpg">
+                        </div>
+                        <h2>Công viên Heilo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia eum vel similique id consectetur quam aliquam doloremque amet pariatur excepturi incidunt alias debitis, dolor vero deleniti ratione dolorum in.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-12">
+                    <div class="content">
+                        <div class="card__img">
+                            <img src="img/LocationPage/Park/cong-vien-Helio.jpg">
+                        </div>
+                        <h2>Công viên Heilo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia eum vel similique id consectetur quam aliquam doloremque amet pariatur excepturi incidunt alias debitis, dolor vero deleniti ratione dolorum in.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-12">
+                    <div class="content">
+                        <div class="card__img">
+                            <img src="img/LocationPage/Park/cong-vien-Helio.jpg">
+                        </div>
+                        <h2>Công viên Heilo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia eum vel similique id consectetur quam aliquam doloremque amet pariatur excepturi incidunt alias debitis, dolor vero deleniti ratione dolorum in.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--phần hiển thị thông số địa điểm, chuyến bay, chuyến xe,...-->
+    <section>
+      <div class="container">
+          <div class="small_section none col-lg-2 col-xs-6">
+              <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+              <div class="item">
+                  <div class="number">52</div>
+                  <p>Địa điểm</p>
+              </div>
+          </div>
+          <div class="small_section line col-lg-2 col-xs-6">
+              <div class="icon"><i class="fa-solid fa-tents"></i></div>
+              <div class="item">
+                  <div class="number">47</div>
+                  <p>Ngày lễ</p>
+              </div>
+          </div>
+          <div class="small_section line col-lg-2 col-xs-6">
+              <div class="icon"><i class="fa-solid fa-hotel"></i></div>
+              <div class="item">
+                  <div class="number">146</div>
+                  <p>Khách sạn</p>
+              </div>
+          </div>
+          <div class="small_section line col-lg-2 col-xs-6">
+              <div class="icon"><i class="fa-solid fa-ship"></i></div>
+              <div class="item">
+                  <div class="number">94</div>
+                  <p>Du thuyền</p>
+              </div>
+          </div>
+          <div class="small_section line col-lg-2 col-xs-6">
+              <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+              <div class="item">
+                  <div class="number">218</div>
+                  <p>Chuyến bay</p>
+              </div>
+          </div>
+          <div class="small_section line col-lg-2 col-xs-6">
+              <div class="icon"><i class="fa-solid fa-car-side"></i></div>
+              <div class="item">
+                  <div class="number">386</div>
+                  <p>Chuyến xe</p>
+              </div>
+          </div>
+      </div> 
+    </section>
+
+    <!--Phần hiển thị chân trang-->
+    <footer class="site-footer">
+        <div class="email">
+            <div class="container">
+                <div class="text col-lg-5">
+                    <p>Đăng kí ngay hôm nay</p>
+                    <span><b>Nhận</b> ưu đãi mới nhất</span>
+                </div>
+                <div class="input col-lg-7">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" multiple spellcheck="true"  placeholder="Điền email của bạn ...">
+                    <button>send</button>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="img/Shared/logo.png">
+                    <div class="line-short"></div>
+                    <p class="text">
+                        <ul class="footer-links">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti ullam iste nesciunt 
+                                perferendis perspiciatis consectetur soluta beatae explicabo dolorum. 
+                                Sit ratione nobis illum voluptates debitis odio! Sed, quidem tempora?</p>
+                        </ul>
+                    </p>
+                    </div>
+                    <div class="vertical col-lg-4 col-md-3 col-xs-6">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <ul class="footer-links">
+                        <li class="icon"><i class="fa-solid fa-phone"></i> +84 96 174 7165</li>
+                        <li class="icon"><i class="fa-regular fa-envelope"></i> thanhnhan14547@gmail.com</li>
+                        <div class="icon"><i class="fa-brands fa-facebook"></i> Nhân Lê</div>
+                    </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-xs-6">
+                    <h6>liên kết</h6>
+                    <ul class="footer-links">
+                        <li><a href="index_Home.html">Trang chủ</a></li>
+                        <li><a href="index_Hotel.html">khách sạn</a></li>
+                        <li><a href="index_Detail_Location.html">Địa điểm</a></li>
+                        <li><a href="index_Detail_Location.html#beach">Bãi biển</a></li>
+                        <li><a href="index_Detail_Location.html#park">Công viên</a></li>
+                        <li><a href="index_Detail_Location.html#cuisine">Ẩm thực</a></li>
+                        <li><a href="index_Detail_Location.html#shopping">Mua sắm</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">&copy; Copyright 2017 <span><b>DN Tour </b></span> |  All Rights Reserved by <a href="#">Scanfcode</a>.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Phần javascript sử lý việc ẩn hiện các phần giới thiệu-->
+    <script src="script.js"></script>
+</body>
+</html>

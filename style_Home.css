@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    background-image: url(img/Shared/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header nav{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+header nav .navbar-fruit{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav .navbar-fruit li{
+    position: relative;
+    float: left;
+    height: 40px;
+    font-size: 15px;
+}
+header nav .navbar-fruit img{
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+header nav .navbar-fruit li a{
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+header nav .navbar-fruit li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header nav .submenu{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    top:100%;
+    left: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+header nav .navbar-fruit li:hover .submenu{
+    display: block;
+}
+header nav .submenu li{
+    list-style: none;
+    float: none;
+}
+header nav .submenu li a{
+    text-align: center;
+}
+
+#banner-fruit .text .title{
+    width: 90%;
+    height: 40%;
+    border-bottom: #ffc107 2px solid;
+    margin: 0 5%;
+}
+#banner-fruit .text .title .yellow{
+    color: #ffc107;
+    font-size: 25px;
+}
+#banner-fruit .text .title .popular{
+    font-size: 45px;
+}
+#banner-fruit .text .title-content{
+    width: 90%;
+    margin: 0 5%;
+    font-size: 15px;
+}
+
+#banner-fruit .img{
+    display: block;
+    height: 100%;
+}
+#banner-fruit .img img{
+    height: 100%;
+}
+
+
+/*Phần css cho phần hiển thị các khu du lịch*/
+section{
+    width: 99.9%;
+    margin-bottom: 50px;
+}
+section #img{
+  position: relative;
+}
+section #img .img{
+    width: 99%;
+    height: 99%;
+    margin: auto;
+}
+section #img .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+}
+section #img #text{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    top: 0;
+    left: 0;
+}
+section #img #text .yellow{
+    color: #d49f00;
+    margin-right: 20px;
+    font-size: 23px;
+}
+section #img #text .right{
+    width: 100%;
+    height: 65%;
+    margin-top: 10px;
+    text-align:right;
+}
+section #img #text .right .temperature{
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+}
+section #img #text .left{
+    width: 100%;
+    height: 35%;
+} 
+section #img #text .left .danang{
+    margin: 30px 0px 0px 4%;
+}
+section #img #text .left .direction{
+    font-size: 25px;
+    color: white;
+    margin: 0px 0px 0px 4%;
+}
+section #img .hover{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    border-radius: 10px;
+    top: 0;
+    left: 0.5%;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+section #img .hover .top{
+    width: 100%;
+    height: 50%;
+}
+section #img .hover .top .yellow{
+    color: #ffc107;
+    font-size: 20px;
+    margin: 10px 0px 0px 10px;
+}
+section #img .hover .top .cost{
+    font-size: 25px;
+    color: white;
+    margin: 5px 0px 0px 10px;
+}
+section #img .hover .top .details{
+    color: white;
+    font-size: 15px;
+    margin: 15px 0px 0px 40px;
+}
+section #img .hover .bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+section #img .hover a{
+    background-color: transparent;
+    border: 2px solid #ffc107;
+    border-radius: 30px;
+    color: #ffc107;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 20px 10px;
+    padding: 5px 10px;
+    transition: 1s;
+}
+section #img .hover a:hover{
+    background-color: #ffc107;
+    border: none;
+    color: white;
+}
+section #img .hover:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* phần css cho phần chi tiết các khu du lịch*/
+.detail {
+    display: none;
+  }
+  
+.detail.active {
+    display: block;
+}
+.detail .content .name{
+    display:block;
+    font-size: 25px;
+    font-weight: bold;
+}
+.detail .content .short-detail{
+    font-size: 15px;
+}
+.detail .content .info{
+    margin-top: 50px;
+}
+.detail .content .info ol{
+    font-size: 15px;
+}
+.detail .content .info ol .bold{
+    font-weight: bold;
+}
+/* phần css cho phần thống kê*/
+section .small_section{
+    position: relative;
+    padding: 0 50px; 
+}
+section .line:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -5%;
+    border-left: 2px solid #ffc107;
+    width: 3px;
+    height: 80px;
+    transform: skew(-15deg);
+}
+section .small_section .icon{
+    display: inline-block;
+    font-size: 32px;
+    position: absolute;
+    top: 8px;
+    color: #a9b5c1;
+}
+section .small_section .item{
+    font-size: 38px;
+    padding-left: 50px;
+    display: inline-block;
+}
+section .small_section .item p{
+    font-size: 12px;
+    color: #a9b5c1;
+}
+/* phần css cho phần giới thiệu về ĐN Tour*/
+.about{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 0;
+    background-image: url(img/HomePage/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about .container{
+    padding-top: 5%;
+}
+.about h2{
+    font-size: 42px;
+    color: white;
+}
+.about h2 b{
+    color: #d49f00;
+}
+.about .bottom{
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 15px;
+}
+.about .line-short{
+    width: 100px;
+    margin: 30px 0;
+    border-bottom: 3px solid #ffc107;
+}
+.about .signature{
+    font-size: 31px;
+    margin-bottom: 20px;
+}
+/* phần css cho phần chân trang*/
+.site-footer .email{
+    background-color: #ffc107;
+    background-image: url(img/Shared/pattern5.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+.site-footer .email .container{
+    padding: 80px 0;
+}
+.site-footer .email .container .text p{
+    font-size: 15px;
+    color: white;
+}
+.site-footer .email .container .text span{
+    font-size: 37px;
+    color: white;
+}
+.site-footer .email .container .input{
+    margin-top: 10px;
+    position: relative;
+}
+.site-footer .email .container .input i{
+    font-size: 25px;
+    top: 20%;
+    left: 30px;
+    position: absolute;
+}
+.site-footer .email .container .input input{
+    padding-left: 50px ;
+    height: 40px;
+    width: 70%;
+    font-size: 14px;
+    border: solid white;
+    border-radius: 10px 0 0 10px;
+}
+.site-footer .email .container .input button{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    border-radius: 0 10px 10px 0;
+}
+.site-footer .email .container .input button:hover{
+    background-color: rgb(164, 163, 163);
+    font-weight: bold;
+}
+.site-footer .info{
+    background-image: url(img/Shared/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.site-footer .info .container .vertical{
+    border-left: 2px solid #ffc107;
+    border-right: 2px solid #ffc107;
+}
+.site-footer .info .container h6{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffc107;
+}
+.site-footer .info .container img{
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.site-footer .info .container .footer-links{
+    list-style: none;
+    padding: 0;
+}
+.site-footer .info .container .footer-links .icon{
+    font-size: 15px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0 ;
+}
+.site-footer .info .container .footer-links .icon i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #d49f00;
+}
+.site-footer .info .container .footer-links p{
+    color: RGB(115, 114, 119);
+    font-size: 15px;
+}
+.site-footer .info .container .footer-links li{
+    display: inline;
+}
+.site-footer .info .container .footer-links a{
+    margin-left: 40px;
+    color: RGB(115, 114, 119);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.site-footer .info .container .footer-links a:hover{
+    color: #ffc107;
+}
+.site-footer .copy{
+    background-color: #424D58;
+    padding: 20px 0;
+}
+.site-footer .copy p{
+    font-size: 15px;
+    color:  white;
+}
+.site-footer .copy span{
+    color: #ffc107;
+}
