@@ -120,6 +120,7 @@ section{
 }
 section #img{
   position: relative;
+  height: 400px;
 }
 section #img .img{
     width: 99%;
@@ -253,7 +254,7 @@ section #img .hover:hover {
 /* phần css cho phần thống kê*/
 section .small_section{
     position: relative;
-    padding: 0 50px; 
+    padding: 10px 50px; 
 }
 section .line:before{
     content: '';
@@ -285,7 +286,7 @@ section .small_section .item p{
 /* phần css cho phần giới thiệu về ĐN Tour*/
 .about{
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-bottom: 0;
     background-image: url(img/HomePage/about.jpg);
     background-repeat: no-repeat;
