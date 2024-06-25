@@ -71,7 +71,7 @@ header nav .submenu li{
 header nav .submenu li a{
   text-align: center;
 }
-#banner-fruit .text{
+/* #banner-fruit .text{
   padding: 0;
 }
 #banner-fruit .text .title{
@@ -94,12 +94,40 @@ header nav .submenu li a{
 #banner-fruit .img{
   display: inline-block;
   padding: 0;
-}
-section{
+} */
+.top-line{
   width: 100%;
+  border-top: 3px solid #ffc107;
+  margin: 40px 0;
+}
+#banner-fruit .text .title{
+  width: 90%;
+  height: 40%;
+  border-bottom: #ffc107 2px solid;
+  margin: 0 5%;
+}
+#banner-fruit .text .title .yellow{
+  color: #ffc107;
+  font-size: 25px;
+}
+#banner-fruit .text .title .popular{
+  font-size: 45px;
+}
+#banner-fruit .text .title-content{
+  width: 90%;
+  margin: 0 5%;
+  font-size: 15px;
+}
+
+#banner-fruit .img{
+  display: block;
+  height: 100%;
+  margin-bottom: -15px;
+}
+#banner-fruit .img img{
+  height: 100%;
 }
 section #slide{
-  width: 31%;
     overflow: hidden;
     border-radius: 10px;
     margin: 10px auto;
@@ -110,12 +138,10 @@ section #slide:hover{
 }
 section #slide .slip .text{
     width: 30%;
-    height: 100%;
     float: left;
 }
 section #slide .img{
     width: 69%;
-    height: 100%;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 section #slide .slip{
@@ -123,7 +149,7 @@ section #slide .slip{
     height:100%;
 }
 section #slide .slip img{
-  height: 270px;
+  height: 100%;
 }
 section #slide .slip .text .name{
   font-size: 15px;
@@ -243,7 +269,7 @@ section #slide .slip .text .detail-text{
     margin-left: 10px;
     font-size: 12px;
     color: #b5b5b5;
-    height: 100px;
+    height: 150px;
     overflow: hidden;
 }
 section #slide .slip .text .chose{
